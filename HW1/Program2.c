@@ -39,7 +39,7 @@ void generate(struct student* students){
 
      int i =0;
 
-    /* while( i < 10)
+     while( i < 10)
      {
           students[i].score = rand()%101; 
 
@@ -48,16 +48,8 @@ void generate(struct student* students){
           students[i].initials[1] = 'A' + (rand()%26);
 
           i++; 
-     }*/
-
-     for(int j=0; j<10; j++)
-     {
-          students[i].score = rand()%101; 
-
-          students[i].initials[0] = 'A' + (rand()%26);
-
-          students[i].initials[1] = 'A' + (rand()%26);
      }
+
      
 }
 
@@ -106,6 +98,29 @@ void summary(struct student* students){
 
      printf("\nThe average score is: %d\n", avg); 
 
+     /* insertion sort */
+
+     int n = 10; 
+
+     int q, w;
+     struct student key; 
+
+     for(q=1; q<n; q++)
+     {
+          w=q; 
+
+          while(w>0 && students[w-1].score > students[w].score)
+          {
+               key = students[w];
+               students[w] = students[w-1]; 
+               students[w-1] = key; 
+               w--; 
+          }
+     }
+
+     printf("\nThe lowest score was: %d\n", students[0].score);
+
+     printf("\nThe highest score was: %d\n", students[9].score); 
 
 }
 
