@@ -39,7 +39,7 @@ void generate(struct student* students){
 
      int i =0;
 
-     while( i < 10)
+    /* while( i < 10)
      {
           students[i].score = rand()%101; 
 
@@ -48,6 +48,15 @@ void generate(struct student* students){
           students[i].initials[1] = 'A' + (rand()%26);
 
           i++; 
+     }*/
+
+     for(int j=0; j<10; j++)
+     {
+          students[i].score = rand()%101; 
+
+          students[i].initials[0] = 'A' + (rand()%26);
+
+          students[i].initials[1] = 'A' + (rand()%26);
      }
      
 }
