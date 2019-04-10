@@ -72,7 +72,7 @@ int main(){
     
     /* Print the value returned by foo */
 
-    printf("The value returned by foo is %d", a);
+    printf("The value returned by foo is %d\n", a);
  
     /* Is the return value different than the value of z?  Why? */
 
@@ -81,7 +81,7 @@ int main(){
     this means that the value returned by the function was a completely different variable 
     than z */ 
 
-    
+
     return 0;
 }
     

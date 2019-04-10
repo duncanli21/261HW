@@ -32,6 +32,8 @@ int main(){
     /*Declare an integer n and assign it a value of 20.*/
 
     int n = 20, i; 
+
+    printf("here"); 
     
     /*Allocate memory for an array of n integers using malloc.*/
 
