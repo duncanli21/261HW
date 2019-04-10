@@ -75,6 +75,13 @@ int main(){
     printf("The value returned by foo is %d", a);
  
     /* Is the return value different than the value of z?  Why? */
+
+    /* The return value is different than the value of Z because Z was not passed into the 
+    function as a pointer so the function made a copy of z instead of changing z directly. 
+    this means that the value returned by the function was a completely different variable 
+    than z */ 
+
+    
     return 0;
 }
     
